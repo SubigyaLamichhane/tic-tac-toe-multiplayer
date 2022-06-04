@@ -4,7 +4,10 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "nodemon"
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js",
+    "start2": "ts-node src/index.ts",
+    "watch": "tsc -w"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
