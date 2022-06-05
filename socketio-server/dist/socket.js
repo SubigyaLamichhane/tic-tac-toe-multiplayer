@@ -5,10 +5,10 @@ const socket_io_1 = require("socket.io");
 exports.default = (httpServer) => {
     const io = new socket_io_1.Server(httpServer, {
         cors: {
-            origin: "*",
+            origin: '*',
         },
     });
-    socket_controllers_1.useSocketServer(io, { controllers: [__dirname + "/api/controllers/*.ts"] });
+    socket_controllers_1.useSocketServer(io, { controllers: [__dirname + '/api/controllers/*.js'] });
     return io;
 };
 //# sourceMappingURL=socket.js.map
